@@ -4,10 +4,10 @@
 -Modificar README.md con planeacion de branch
 ### Feature/Modelo-Usuario
 -Definir modelo Usuario, agregar documentacion y configuracion faltante
-### Feature/Modelo-Espectadores
--Definir modelo Espectadores
-### Feature/Modelo-Administradores
--Definir modelo Administradores
+### Feature/Modelo-Espectador
+-Definir modelo Espectador
+### Feature/Modelo-Administrador
+-Definir modelo Administrador
 ### Feature/Modelo-Boleto
 -Definir modelo Boleto
 ### Feature/Modelo-Funcion
@@ -20,10 +20,10 @@
 ## Develop/Controlador
 ### Feature/Controlador-Usuario
 -Definir controlador Usuario
-### Feature/Controlador-Espectadores
--Definir controlador Espectadores
-### Feature/Controlador-Administradores
--Definir controlador Administradores
+### Feature/Controlador-Espectador
+-Definir controlador Espectador
+### Feature/Controlador-Administrador
+-Definir controlador Administrador
 ### Feature/Controlador-Boleto
 -Definir controlador Boleto
 ### Feature/Controlador-Funcion
@@ -36,10 +36,10 @@
 ## Develop/Servicio
 ### Feature/Servicio-Usuario
 -Definir servicio Usuario
-### Feature/Servicio-Espectadores
--Definir servicio Espectadores
-### Feature/Servicio-Administradores
--Definir servicio Administradores
+### Feature/Servicio-Espectador
+-Definir servicio Espectador
+### Feature/Servicio-Administrador
+-Definir servicio Administrador
 ### Feature/Servicio-Boleto
 -Definir servicio Boleto
 ### Feature/Servicio-Funcion
@@ -52,10 +52,10 @@
 ## Develop/PruebasUnitarias
 ### Feature/Pruebas-Unitarias-Usuario
 -Definir pruebas unitarias Usuario
-### Feature/Pruebas-Unitarias-Espectadores
--Definir pruebas unitarias Espectadores
-### Feature/Pruebas-Unitarias-Administradores
--Definir pruebas unitarias Administradores
+### Feature/Pruebas-Unitarias-Espectador
+-Definir pruebas unitarias Espectador
+### Feature/Pruebas-Unitarias-Administrador
+-Definir pruebas unitarias Administrador
 ### Feature/Pruebas-Unitarias-Boleto
 -Definir pruebas unitarias Boleto
 ### Feature/Pruebas-Unitarias-Funcion
