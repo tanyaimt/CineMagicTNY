@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS CineMagicTNYDB CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE IF NOT EXISTS CineMagicTNYDBusuario CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE CineMagicTNYDB;
 
 -- Tabla de Usuarios
@@ -83,3 +83,5 @@ BEGIN
     END IF;
 END//
 DELIMITER ;
+
+INSERT INTO `cinemagictnydb`.`usuario` (`id_usuario`, `nombre`, `edad`, `correo_electronico`, `tipo`) VALUES ('1', 'Tanya', '35', 'anonimo@anom.com', 'espectador');
