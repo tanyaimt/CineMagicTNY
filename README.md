@@ -66,6 +66,38 @@
 ### Feature/Controlador-Pelicula
 -Definir controlador Pelicula
 
+## Develop/Excepciones
+### Feature/Excepcion-Usuario
+-Definir excepcion Usuario
+### Feature/Excepcion-Espectador
+-Definir excepcion Espectador
+### Feature/Excepcion-Administrador
+-Definir excepcion Administrador
+### Feature/Excepcion-Boleto
+-Definir excepcion Boleto
+### Feature/Excepcion-Funcion
+-Definir excepcion Funcion
+### Feature/Excepcion-Sala
+-Definir excepcion Sala
+### Feature/Excepcion-Pelicula
+-Definir excepcion Pelicula
+
+## Develop/Seguridad
+### Feature/Seguridad-Usuario
+-Definir seguridad Usuario
+### Feature/Seguridad-Espectador
+-Definir seguridad Espectador
+### Feature/Seguridad-Administrador
+-Definir seguridad Administrador
+### Feature/Seguridad-Boleto
+-Definir seguridad Boleto
+### Feature/Seguridad-Funcion
+-Definir seguridad Funcion
+### Feature/Seguridad-Sala
+-Definir seguridad Sala
+### Feature/Seguridad-Pelicula
+-Definir seguridad Pelicula
+
 ## Develop/PruebasUnitarias
 ### Feature/Pruebas-Unitarias-Usuario
 -Definir pruebas unitarias Usuario
