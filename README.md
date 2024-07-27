@@ -3,7 +3,7 @@
 ## Develop/Modelo
 -Modificar README.md con planeacion de branch
 ### Feature/Modelo-Usuario
--Definir modelo Usuario
+-Definir modelo Usuario, agregar documentacion y configuracion faltante
 ### Feature/Modelo-Espectadores
 -Definir modelo Espectadores
 ### Feature/Modelo-Administradores
