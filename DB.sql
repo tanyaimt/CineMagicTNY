@@ -21,7 +21,7 @@ CREATE TABLE espectador (
 -- Tabla de Administradores
 CREATE TABLE administrador (
     id_administrador INT PRIMARY KEY,
-    salario DECIMAL(10, 2),
+    salario DOUBLE(10, 2),
     puesto VARCHAR(100),
     FOREIGN KEY (id_administrador) REFERENCES usuario(id_usuario)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -43,7 +43,7 @@ CREATE TABLE sala (
     id_sala INT AUTO_INCREMENT PRIMARY KEY,
     cantidad_asientos INT,
     tipo ENUM('normal', 'vip') NOT NULL,
-    costo DECIMAL(10, 2),
+    costo DOUBLE(10, 2),
     ultimo_editor INT,
     FOREIGN KEY (ultimo_editor) REFERENCES administrador(id_administrador)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -65,7 +65,7 @@ CREATE TABLE boleto (
     id_boleto INT AUTO_INCREMENT PRIMARY KEY,
     id_funcion INT,
     id_espectador INT,
-    asiento VARCHAR(10),
+    asiento INT,
     fecha_compra DATETIME,
     FOREIGN KEY (id_funcion) REFERENCES funcion(id_funcion),
     FOREIGN KEY (id_espectador) REFERENCES espectador(id_espectador)
