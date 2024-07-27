@@ -14,12 +14,12 @@ public class Administrador{
     private String puesto;
 
     @Column(name = "salario")
-    private int salario;
+    private double salario;
 
     public Administrador() {
     }
 
-    public Administrador(Long id_administrador, String puesto, int salario) {
+    public Administrador(Long id_administrador, String puesto, double salario) {
         this.id_administrador = id_administrador;
         this.puesto = puesto;
         this.salario = salario;
@@ -41,11 +41,11 @@ public class Administrador{
         this.puesto = puesto;
     }
 
-    public int getSalario() {
+    public double getSalario() {
         return salario;
     }
 
-    public void setSalario(int salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
