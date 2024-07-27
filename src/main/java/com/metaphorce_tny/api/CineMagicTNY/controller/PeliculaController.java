@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api-peliculas")
+@CrossOrigin(origins = "http://localhost:3000") // Replace with your frontend URL
 public class PeliculaController {
     @Autowired
     IPeliculaService servicePelicula;
