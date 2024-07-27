@@ -18,8 +18,8 @@ public class UsuarioService implements IUsuarioService {
     }
 
     @Override
-    public Usuario buscarPorId(Long id) {
-        return usuarioRepository.findById(id).orElse(null);
+    public Usuario buscarPorId(Long id_usuario) {
+        return usuarioRepository.findById(id_usuario).orElse(null);
     }
 
     @Override
@@ -28,13 +28,13 @@ public class UsuarioService implements IUsuarioService {
     }
 
     @Override
-    public Usuario actualizarUsuario(Long id, Usuario usuario) {
+    public Usuario actualizarUsuario(Long id_usuario, Usuario usuario) {
         return usuarioRepository.save(usuario);
     }
 
     @Override
-    public void eliminarUsuario(Long id) {
-        usuarioRepository.deleteById(id);
+    public void eliminarUsuario(Long id_usuario) {
+        usuarioRepository.deleteById(id_usuario);
     }
 
     // TODO: Implement methods for CRUD operations
