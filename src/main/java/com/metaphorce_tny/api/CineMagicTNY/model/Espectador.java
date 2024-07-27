@@ -16,7 +16,7 @@ public class Espectador{
     public Espectador() {
     }
 
-    public Espectador(Long id_espectador, String puntos, int edad, String correo_electronico, String tipo) {
+    public Espectador(Long id_espectador, String puntos) {
         this.id_espectador = id_espectador;
         this.puntos = puntos;
     }
