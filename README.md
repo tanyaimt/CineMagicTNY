@@ -1,5 +1,6 @@
 # CineMagicTNY
 -Download & extract springboot
+
 ## Develop/Modelo
 -Modificar README.md con planeacion de branch
 ### Feature/Modelo-Usuario
@@ -17,21 +18,21 @@
 ### Feature/Modelo-Pelicula
 -Definir modelo Pelicula
 
-## Develop/Controlador
-### Feature/Controlador-Usuario
--Definir controlador Usuario
-### Feature/Controlador-Espectador
--Definir controlador Espectador
-### Feature/Controlador-Administrador
--Definir controlador Administrador
-### Feature/Controlador-Boleto
--Definir controlador Boleto
-### Feature/Controlador-Funcion
--Definir controlador Funcion
-### Feature/Controlador-Sala
--Definir controlador Sala
-### Feature/Controlador-Pelicula
--Definir controlador Pelicula
+## Develop/Repositorio
+### Feature/Repositorio-Usuario
+-Definir repositorio Usuario
+### Feature/Repositorio-Espectador
+-Definir repositorio Espectador
+### Feature/Repositorio-Administrador
+-Definir repositorio Administrador
+### Feature/Repositorio-Boleto
+-Definir repositorio Boleto
+### Feature/Repositorio-Funcion
+-Definir repositorio Funcion
+### Feature/Repositorio-Sala
+-Definir repositorio Sala
+### Feature/Repositorio-Pelicula
+-Definir repositorio Pelicula
 
 ## Develop/Servicio
 ### Feature/Servicio-Usuario
@@ -48,6 +49,22 @@
 -Definir servicio Sala
 ### Feature/Servicio-Pelicula
 -Definir servicio Pelicula
+
+## Develop/Controlador
+### Feature/Controlador-Usuario
+-Definir controlador Usuario
+### Feature/Controlador-Espectador
+-Definir controlador Espectador
+### Feature/Controlador-Administrador
+-Definir controlador Administrador
+### Feature/Controlador-Boleto
+-Definir controlador Boleto
+### Feature/Controlador-Funcion
+-Definir controlador Funcion
+### Feature/Controlador-Sala
+-Definir controlador Sala
+### Feature/Controlador-Pelicula
+-Definir controlador Pelicula
 
 ## Develop/PruebasUnitarias
 ### Feature/Pruebas-Unitarias-Usuario
