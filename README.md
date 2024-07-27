@@ -1,5 +1,5 @@
 # CineMagicTNY
-
+-Download & extract springboot
 ## Develop/Modelo
 -Modificar README.md con planeacion de branch
 ### Feature/Modelo-Usuario
