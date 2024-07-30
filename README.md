@@ -1,120 +1,120 @@
 # CineMagicTNY
 -Download & extract springboot
 
-## Develop/Modelo
+### Develop/Modelo
 -Modificar README.md con planeacion de branch
-### Feature/Modelo-Usuario
+#### Feature/Modelo-Usuario
 -Definir modelo Usuario, agregar documentacion y configuracion faltante
-### Feature/Modelo-Espectador
+#### Feature/Modelo-Espectador
 -Definir modelo Espectador
-### Feature/Modelo-Administrador
+#### Feature/Modelo-Administrador
 -Definir modelo Administrador
-### Feature/Modelo-Boleto
+#### Feature/Modelo-Boleto
 -Definir modelo Boleto
-### Feature/Modelo-Funcion
+#### Feature/Modelo-Funcion
 -Definir modelo Funcion
-### Feature/Modelo-Sala
+#### Feature/Modelo-Sala
 -Definir modelo Sala
-### Feature/Modelo-Pelicula
+#### Feature/Modelo-Pelicula
 -Definir modelo Pelicula
 
-## Develop/Repositorio
-### Feature/Repositorio-Usuario
+### Develop/Repositorio
+#### Feature/Repositorio-Usuario
 -Definir repositorio Usuario
-### Feature/Repositorio-Espectador
+#### Feature/Repositorio-Espectador
 -Definir repositorio Espectador
-### Feature/Repositorio-Administrador
+#### Feature/Repositorio-Administrador
 -Definir repositorio Administrador
-### Feature/Repositorio-Boleto
+#### Feature/Repositorio-Boleto
 -Definir repositorio Boleto
-### Feature/Repositorio-Funcion
+#### Feature/Repositorio-Funcion
 -Definir repositorio Funcion
-### Feature/Repositorio-Sala
+#### Feature/Repositorio-Sala
 -Definir repositorio Sala
-### Feature/Repositorio-Pelicula
+#### Feature/Repositorio-Pelicula
 -Definir repositorio Pelicula
 
-## Develop/Servicio
-### Feature/Servicio-Usuario
+### Develop/Servicio
+#### Feature/Servicio-Usuario
 -Definir servicio Usuario
-### Feature/Servicio-Espectador
+#### Feature/Servicio-Espectador
 -Definir servicio Espectador
-### Feature/Servicio-Administrador
+#### Feature/Servicio-Administrador
 -Definir servicio Administrador
-### Feature/Servicio-Boleto
+#### Feature/Servicio-Boleto
 -Definir servicio Boleto
-### Feature/Servicio-Funcion
+#### Feature/Servicio-Funcion
 -Definir servicio Funcion
-### Feature/Servicio-Sala
+#### Feature/Servicio-Sala
 -Definir servicio Sala
-### Feature/Servicio-Pelicula
+#### Feature/Servicio-Pelicula
 -Definir servicio Pelicula
 
-## Develop/Controlador
-### Feature/Controlador-Usuario
+### Develop/Controlador
+#### Feature/Controlador-Usuario
 -Definir controlador Usuario
-### Feature/Controlador-Espectador
+#### Feature/Controlador-Espectador
 -Definir controlador Espectador
-### Feature/Controlador-Administrador
+#### Feature/Controlador-Administrador
 -Definir controlador Administrador
-### Feature/Controlador-Boleto
+#### Feature/Controlador-Boleto
 -Definir controlador Boleto
-### Feature/Controlador-Funcion
+#### Feature/Controlador-Funcion
 -Definir controlador Funcion
-### Feature/Controlador-Sala
+#### Feature/Controlador-Sala
 -Definir controlador Sala
-### Feature/Controlador-Pelicula
+#### Feature/Controlador-Pelicula
 -Definir controlador Pelicula
 
-## Develop/Excepciones
-### Feature/Excepcion-Usuario
+### Develop/Excepciones
+#### Feature/Excepcion-Usuario
 -Definir excepcion Usuario
-### Feature/Excepcion-Espectador
+#### Feature/Excepcion-Espectador
 -Definir excepcion Espectador
-### Feature/Excepcion-Administrador
+#### Feature/Excepcion-Administrador
 -Definir excepcion Administrador
-### Feature/Excepcion-Boleto
+#### Feature/Excepcion-Boleto
 -Definir excepcion Boleto
-### Feature/Excepcion-Funcion
+#### Feature/Excepcion-Funcion
 -Definir excepcion Funcion
-### Feature/Excepcion-Sala
+#### Feature/Excepcion-Sala
 -Definir excepcion Sala
-### Feature/Excepcion-Pelicula
+#### Feature/Excepcion-Pelicula
 -Definir excepcion Pelicula
 
-## Develop/Seguridad
-### Feature/Seguridad-Usuario
+### Develop/Seguridad
+#### Feature/Seguridad-Usuario
 -Definir seguridad Usuario
-### Feature/Seguridad-Espectador
+#### Feature/Seguridad-Espectador
 -Definir seguridad Espectador
-### Feature/Seguridad-Administrador
+#### Feature/Seguridad-Administrador
 -Definir seguridad Administrador
-### Feature/Seguridad-Boleto
+#### Feature/Seguridad-Boleto
 -Definir seguridad Boleto
-### Feature/Seguridad-Funcion
+#### Feature/Seguridad-Funcion
 -Definir seguridad Funcion
-### Feature/Seguridad-Sala
+#### Feature/Seguridad-Sala
 -Definir seguridad Sala
-### Feature/Seguridad-Pelicula
+#### Feature/Seguridad-Pelicula
 -Definir seguridad Pelicula
 
-## Develop/PruebasUnitarias
-### Feature/Pruebas-Unitarias-Usuario
+### Develop/PruebasUnitarias
+#### Feature/Pruebas-Unitarias-Usuario
 -Definir pruebas unitarias Usuario
-### Feature/Pruebas-Unitarias-Espectador
+#### Feature/Pruebas-Unitarias-Espectador
 -Definir pruebas unitarias Espectador
-### Feature/Pruebas-Unitarias-Administrador
+#### Feature/Pruebas-Unitarias-Administrador
 -Definir pruebas unitarias Administrador
-### Feature/Pruebas-Unitarias-Boleto
+#### Feature/Pruebas-Unitarias-Boleto
 -Definir pruebas unitarias Boleto
-### Feature/Pruebas-Unitarias-Funcion
+#### Feature/Pruebas-Unitarias-Funcion
 -Definir pruebas unitarias Funcion
-### Feature/Pruebas-Unitarias-Sala
+#### Feature/Pruebas-Unitarias-Sala
 -Definir pruebas unitarias Sala
-### Feature/Pruebas-Unitarias-Pelicula
+#### Feature/Pruebas-Unitarias-Pelicula
 -Definir pruebas unitarias Pelicula
 
-## Develop/Configuracion
-### Feature/Configuracion-resource
+### Develop/Configuracion
+#### Feature/Configuracion-resource
 -configurar variables locales para contraseñas
 -configurar resource
