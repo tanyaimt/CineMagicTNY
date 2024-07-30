@@ -26,7 +26,7 @@ public class UsuarioServiceTest {
 
     @BeforeEach
     public void setup(){
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test
@@ -50,6 +50,6 @@ public class UsuarioServiceTest {
 
         Usuario usuarioActual = usuarioService.buscarPorId(1L);
 
-        Assertions.assertEquals(usuarioEsperada, usuarioEsperada);
+        Assertions.assertEquals(usuarioEsperada, usuarioActual);
     }
 }
