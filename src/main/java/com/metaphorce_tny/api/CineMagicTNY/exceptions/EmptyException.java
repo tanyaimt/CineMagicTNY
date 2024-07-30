@@ -8,6 +8,8 @@ public class EmptyException extends Exception {
 
     public EmptyException(String mensaje){
         super(mensaje);
+        System.out.println(status);
+        System.out.println(errorCode);
     }
     
 }
