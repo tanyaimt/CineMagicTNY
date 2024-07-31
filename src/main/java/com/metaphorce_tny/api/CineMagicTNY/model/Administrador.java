@@ -10,6 +10,15 @@ public class Administrador{
     @Column(name = "id_administrador")
     private Long id_administrador;
 
+    @Column(name = "nombre")
+    private String nombre;
+
+    @Column(name = "edad")
+    private int edad;
+
+    @Column(name = "correo_electronico")
+    private String correo_electronico;
+
     @Column(name = "puesto", nullable = false)
     private String puesto;
 
@@ -32,6 +41,27 @@ public class Administrador{
     public void setIdUsuario(Long id_administrador) {
         this.id_administrador = id_administrador;
     }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public String getCorreoElectronico() {
+        return correo_electronico;
+    }
+
+    public void setCorreoElectronico(String correo_electronico) {
+        this.correo_electronico = correo_electronico;
+    }
 
     public String getPuesto() {
         return puesto;
@@ -53,6 +83,9 @@ public class Administrador{
     public String toString() {
         return "Usuario{" +
                 "id_administrador=" + id_administrador +
+                ", nombre='" + nombre + '\'' +
+                ", edad='" + edad + '\'' +
+                ", correo_electronico='" + correo_electronico + '\'' +
                 ", puesto='" + puesto + '\'' +
                 ", salario='" + salario + '\'' +
                 '}';
