@@ -1,11 +1,14 @@
 package com.metaphorce_tny.api.CineMagicTNY.controller;
 
+import com.metaphorce_tny.api.CineMagicTNY.exceptions.EmptyExeption;
 import com.metaphorce_tny.api.CineMagicTNY.model.Administrador;
 import com.metaphorce_tny.api.CineMagicTNY.service.IAdministradorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.validation.BindingResult;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
@@ -28,7 +31,10 @@ public class AdministradorController {
     }
 
     @PostMapping("/administrador")
-    public ResponseEntity<Administrador> crearAdministrador(@RequestBody Administrador administrador){
+    public ResponseEntity<Administrador> crearAdministrador(@Valid @RequestBody Administrador administrador, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            throw new EmptyExeption("Nombre obligatorio", "err-32", HttpStatus.NOT_FOUND, bindingResult);
+        }
         Administrador administradorCreada = serviceAdministrador.crearAdministrador(administrador);
         return ResponseEntity.status(HttpStatus.CREATED).body(administradorCreada);
     }
