@@ -23,6 +23,11 @@ public class AdministradorService implements IAdministradorService {
     }
 
     @Override
+    public Administrador buscarPorUserName(Long user_name) {
+        return administradorRepository.findById(user_name).orElse(null);
+    }
+
+    @Override
     public Administrador crearAdministrador(Administrador administrador) {
         return administradorRepository.save(administrador);
     }

@@ -10,6 +10,12 @@ public class Administrador{
     @Column(name = "id_administrador")
     private Long id_administrador;
 
+    @Column(name = "user_name")
+    private Long user_name;
+
+    @Column(name = "pwd")
+    private String pwd;
+
     @Column(name = "nombre")
     private String nombre;
 
@@ -34,6 +40,20 @@ public class Administrador{
         this.salario = salario;
     }
 
+    public Long getUserName() {
+        return user_name;
+    }
+
+    public void setUserName(Long user_name) {
+        this.user_name = user_name;
+    }
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
+    }
     public Long getIdUsuario() {
         return id_administrador;
     }
