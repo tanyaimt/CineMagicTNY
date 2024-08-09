@@ -1,7 +1,8 @@
 package com.metaphorce_tny.api.CineMagicTNY.controller;
 
 import com.metaphorce_tny.api.CineMagicTNY.model.Espectador;
-import com.metaphorce_tny.api.CineMagicTNY.service.IEspectadorService;
+import com.metaphorce_tny.api.CineMagicTNY.services.IEspectadorService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

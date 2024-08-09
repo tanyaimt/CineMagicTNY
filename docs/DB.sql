@@ -1,6 +1,18 @@
 CREATE DATABASE IF NOT EXISTS CineMagicTNYDB CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE CineMagicTNYDB;
 #drop database CineMagicTNYDB;
+#drop table Usuario;
+
+-- Tabla de Usuario
+CREATE TABLE Usuario (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre_usuario VARCHAR(100) NOT NULL UNIQUE,
+    password_usuario VARCHAR(100) NOT NULL,
+    rol ENUM('espectador', 'administrador') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+INSERT INTO `cinemagictnydb`.`Usuario` (`nombre_usuario`,`password_usuario`, `rol`) VALUES ('taroj', 'Pwd123', 'administrador');
+INSERT INTO `cinemagictnydb`.`Usuario` (`nombre_usuario`,`password_usuario`, `rol`) VALUES ('joesp', 'Pwd123', 'espectador');
+select * from Usuario;
 
 -- Tabla de Espectadores
 CREATE TABLE espectador (

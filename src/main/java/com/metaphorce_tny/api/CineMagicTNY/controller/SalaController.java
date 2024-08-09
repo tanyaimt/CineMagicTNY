@@ -1,7 +1,8 @@
 package com.metaphorce_tny.api.CineMagicTNY.controller;
 
 import com.metaphorce_tny.api.CineMagicTNY.model.Sala;
-import com.metaphorce_tny.api.CineMagicTNY.service.ISalaService;
+import com.metaphorce_tny.api.CineMagicTNY.services.ISalaService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

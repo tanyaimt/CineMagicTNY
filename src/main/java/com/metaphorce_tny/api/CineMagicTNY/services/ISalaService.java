@@ -1,4 +1,4 @@
-package com.metaphorce_tny.api.CineMagicTNY.service;
+package com.metaphorce_tny.api.CineMagicTNY.services;
 
 import com.metaphorce_tny.api.CineMagicTNY.model.Sala;
 import java.util.List;

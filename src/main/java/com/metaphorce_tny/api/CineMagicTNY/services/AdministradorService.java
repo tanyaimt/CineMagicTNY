@@ -1,4 +1,4 @@
-package com.metaphorce_tny.api.CineMagicTNY.service;
+package com.metaphorce_tny.api.CineMagicTNY.services;
 
 import com.metaphorce_tny.api.CineMagicTNY.model.Administrador;
 import com.metaphorce_tny.api.CineMagicTNY.repository.AdministradorRepository;
@@ -20,11 +20,6 @@ public class AdministradorService implements IAdministradorService {
     @Override
     public Administrador buscarPorId(Long id_administrador) {
         return administradorRepository.findById(id_administrador).orElse(null);
-    }
-
-    @Override
-    public Administrador buscarPorUserName(Long user_name) {
-        return administradorRepository.findById(user_name).orElse(null);
     }
 
     @Override

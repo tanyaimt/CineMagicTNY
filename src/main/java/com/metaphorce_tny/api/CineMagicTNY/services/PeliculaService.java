@@ -1,4 +1,4 @@
-package com.metaphorce_tny.api.CineMagicTNY.service;
+package com.metaphorce_tny.api.CineMagicTNY.services;
 
 import com.metaphorce_tny.api.CineMagicTNY.model.Pelicula;
 import com.metaphorce_tny.api.CineMagicTNY.repository.PeliculaRepository;

@@ -1,4 +1,4 @@
-package com.metaphorce_tny.api.CineMagicTNY.service;
+package com.metaphorce_tny.api.CineMagicTNY.services;
 
 import com.metaphorce_tny.api.CineMagicTNY.model.Boleto;
 import java.util.List;

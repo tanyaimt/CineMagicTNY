@@ -1,6 +1,6 @@
 package com.metaphorce_tny.api.CineMagicTNY.configuration;
 
-import com.metaphorce_tny.api.CineMagicTNY.repository.AdministradorRepository;
+import com.metaphorce_tny.api.CineMagicTNY.repository.UsuarioRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -15,10 +15,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class ApplicationConfig {
 
-    private final AdministradorRepository administradorRepository;
+    private final UsuarioRepository usuarioRepository;
 
-    public ApplicationConfig(AdministradorRepository administradorRepository) {
-        this.administradorRepository = administradorRepository;
+    public ApplicationConfig(UsuarioRepository usuarioRepository) {
+        this.usuarioRepository = usuarioRepository;
     }
 
     @Bean
@@ -42,7 +42,7 @@ public class ApplicationConfig {
     @Bean
     public UserDetailsService userDetailService() {
 
-        return user_name -> administradorRepository.findById(user_name)
+        return username -> usuarioRepository.findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado"));
     }
 }
