@@ -1,5 +1,6 @@
 package com.metaphorce_tny.api.CineMagicTNY.controller;
 
+import com.metaphorce_tny.api.CineMagicTNY.exceptions.NotFoundExeption;
 import com.metaphorce_tny.api.CineMagicTNY.model.Sala;
 import com.metaphorce_tny.api.CineMagicTNY.services.ISalaService;
 
@@ -12,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api-salas")
+@CrossOrigin(origins = "http://localhost:3000") // Replace with your frontend URL
 public class SalaController {
     @Autowired
     ISalaService serviceSala;
@@ -25,6 +27,9 @@ public class SalaController {
     @GetMapping("/sala/{id_sala}")
     public ResponseEntity<Sala> buscarSala(@PathVariable Long id_sala){
         Sala sala = serviceSala.buscarPorId(id_sala);
+        if(sala == null){
+           throw new NotFoundExeption("Sala no encontrada", "err-12", HttpStatus.NOT_FOUND);
+        }
         return ResponseEntity.ok(sala);
     }
 

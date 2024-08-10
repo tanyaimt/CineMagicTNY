@@ -1,8 +1,8 @@
 package com.metaphorce_tny.api.CineMagicTNY.controller;
 
+import com.metaphorce_tny.api.CineMagicTNY.exceptions.NotFoundExeption;
 import com.metaphorce_tny.api.CineMagicTNY.model.Funcion;
 import com.metaphorce_tny.api.CineMagicTNY.services.IFuncionService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api-funcions")
+@RequestMapping("/api-funciones")
+@CrossOrigin(origins = "http://localhost:3000") // Replace with your frontend URL
 public class FuncionController {
     @Autowired
     IFuncionService serviceFuncion;
@@ -25,6 +26,9 @@ public class FuncionController {
     @GetMapping("/funcion/{id_funcion}")
     public ResponseEntity<Funcion> buscarFuncion(@PathVariable Long id_funcion){
         Funcion funcion = serviceFuncion.buscarPorId(id_funcion);
+        if(funcion == null){
+           throw new NotFoundExeption("Funcion no encontrada", "err-12", HttpStatus.NOT_FOUND);
+        }
         return ResponseEntity.ok(funcion);
     }
 

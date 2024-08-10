@@ -1,8 +1,8 @@
 package com.metaphorce_tny.api.CineMagicTNY.controller;
 
+import com.metaphorce_tny.api.CineMagicTNY.exceptions.NotFoundExeption;
 import com.metaphorce_tny.api.CineMagicTNY.model.Boleto;
 import com.metaphorce_tny.api.CineMagicTNY.services.IBoletoService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api-boletos")
+@CrossOrigin(origins = "http://localhost:3000") // Replace with your frontend URL
 public class BoletoController {
     @Autowired
     IBoletoService serviceBoleto;
@@ -25,8 +26,12 @@ public class BoletoController {
     @GetMapping("/boleto/{id_boleto}")
     public ResponseEntity<Boleto> buscarBoleto(@PathVariable Long id_boleto){
         Boleto boleto = serviceBoleto.buscarPorId(id_boleto);
+        if(boleto == null){
+           throw new NotFoundExeption("Boleto no encontrado", "err-12", HttpStatus.NOT_FOUND);
+        }
         return ResponseEntity.ok(boleto);
     }
+    
 
     @PostMapping("/boleto")
     public ResponseEntity<Boleto> crearBoleto(@RequestBody Boleto boleto){

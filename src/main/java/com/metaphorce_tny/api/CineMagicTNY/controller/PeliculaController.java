@@ -2,7 +2,7 @@ package com.metaphorce_tny.api.CineMagicTNY.controller;
 
 import com.metaphorce_tny.api.CineMagicTNY.model.Pelicula;
 import com.metaphorce_tny.api.CineMagicTNY.services.IPeliculaService;
-
+import com.metaphorce_tny.api.CineMagicTNY.exceptions.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,12 +20,15 @@ public class PeliculaController {
 
     @GetMapping("/pelicula")
     public List<Pelicula> listarPeliculas(){
-        return servicePelicula.listarPelicula();
+         return servicePelicula.listarPelicula();
     }
 
     @GetMapping("/pelicula/{id_pelicula}")
     public ResponseEntity<Pelicula> buscarPelicula(@PathVariable Long id_pelicula){
         Pelicula pelicula = servicePelicula.buscarPorId(id_pelicula);
+        if(pelicula == null){
+           throw new NotFoundExeption("Pelicula no encontrada", "err-12", HttpStatus.NOT_FOUND);
+        }
         return ResponseEntity.ok(pelicula);
     }
 
